@@ -27,31 +27,30 @@
     [self.view addSubview:btn];
     
     self.semaphore = dispatch_semaphore_create(1);
-    
 }
 
 
 - (void)startPrintBySemaphore {
     
     dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
-    __block NSString *print1Info = nil;
+    __block NSString *print1Info = @"1";
     [self print1WithCompletion:^(NSString *previousPrint) {
-        dispatch_semaphore_signal(self.semaphore);
         print1Info = previousPrint;
-    }];
-    
-    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
-    __block NSString *print2Info = nil;
-    [self print2WithPrint1Info:print1Info completion:^(NSString *previousPrint) {
         dispatch_semaphore_signal(self.semaphore);
-        print2Info = previousPrint;
     }];
-    
+
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    __block NSString *print2Info = @"2";
+    [self print2WithPrint1Info:print1Info completion:^(NSString *previousPrint) {
+        print2Info = previousPrint;
+        dispatch_semaphore_signal(self.semaphore);
+    }];
+
     dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
     [self print3WithPrint2Info:print2Info completion:^{
         dispatch_semaphore_signal(self.semaphore);
     }];
- 
+    
 }
 
 - (void)print1WithCompletion:(void(^)(NSString *previousPrint))completion {
@@ -63,6 +62,7 @@
 - (void)print2WithPrint1Info:(NSString *)print1Info completion:(void(^)(NSString *previousPrint))completion {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSString *log = [NSString stringWithFormat:@"%@------> print 2",print1Info];
+        NSLog(@"%@",log);
         completion(log);
     });
 }
