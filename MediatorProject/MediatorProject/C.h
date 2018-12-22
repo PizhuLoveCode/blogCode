@@ -1,5 +1,5 @@
 //
-//  Mediator.h
+//  C.h
 //  MediatorProject
 //
 //  Created by hushunfeng on 2018/12/21.
@@ -10,12 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Mediator : NSObject
+@interface C : NSObject
 
-- (void)printInBFromA:(NSString *)str;
-
-//如果有3个参数
-- (void)printInCFromA:(NSString *)name age:(NSInteger)age height:(CGFloat)height;
+- (void)printInfo;
 
 @end
 

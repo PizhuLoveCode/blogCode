@@ -14,4 +14,8 @@
     NSLog(@"------> %@",str);
 }
 
+- (void)printInfo:(NSDictionary *)params {
+    NSLog(@"-----> 开始解析params:%@",params);
+}
+
 @end

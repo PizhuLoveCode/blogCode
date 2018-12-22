@@ -16,4 +16,12 @@
     [aInstance performSelector:NSSelectorFromString(@"print:") withObject:str];
 }
 
+- (void)printInCFromA:(NSString *)name age:(NSInteger)age height:(CGFloat)height {
+    Class classA = NSClassFromString(@"A");
+    id aInstance = [[classA alloc] init];
+    NSDictionary *params = @{@"name":name,@"age":@(age),@"height":@(height)};
+    [aInstance performSelector:NSSelectorFromString(@"printInfo:") withObject:params];
+
+}
+
 @end

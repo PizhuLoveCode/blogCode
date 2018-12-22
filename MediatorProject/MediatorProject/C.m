@@ -1,23 +1,20 @@
 //
-//  B.m
+//  C.m
 //  MediatorProject
 //
 //  Created by hushunfeng on 2018/12/21.
 //  Copyright © 2018 cmcc. All rights reserved.
 //
 
-#import "B.h"
+#import "C.h"
 #import "Mediator.h"
 
-@implementation B
+@implementation C
 
-- (void)print {
+- (void)printInfo {
     Mediator *mediator = [[Mediator alloc] init];
-    [mediator printInBFromA:@"hello"];
+    [mediator printInCFromA:@"nick" age:10 height:23.7];
 }
 
-- (void)say:(NSString *)name age:(NSInteger)age {
-    NSLog(@"-----> name:%@,age:%ld",name,age);
-}
 
 @end
