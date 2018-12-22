@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "B.h"
 #import "C.h"
+#import "D.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -18,6 +19,9 @@ int main(int argc, const char * argv[]) {
         
         C *c = [[C alloc] init];
         [c printInfo];
+        
+        D *d = [[D alloc] init];
+        [d printBook];
     }
     return 0;
 }

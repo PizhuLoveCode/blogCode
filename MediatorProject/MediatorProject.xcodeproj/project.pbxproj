@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		FA4D652821CD1ED2008E0918 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D652721CD1ED2008E0918 /* main.m */; };
-		FA4D653021CD1EE5008E0918 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D652F21CD1EE5008E0918 /* Mediator.m */; };
-		FA4D653321CD1EEF008E0918 /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D653221CD1EEF008E0918 /* A.m */; };
-		FA4D653621CD1EF9008E0918 /* B.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D653521CD1EF9008E0918 /* B.m */; };
-		FA4D653921CD2927008E0918 /* C.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D653821CD2927008E0918 /* C.m */; };
+		FA4D654621CE363B008E0918 /* B.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D653C21CE363B008E0918 /* B.m */; };
+		FA4D654721CE363B008E0918 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D653F21CE363B008E0918 /* Mediator.m */; };
+		FA4D654821CE363B008E0918 /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D654221CE363B008E0918 /* A.m */; };
+		FA4D654921CE363B008E0918 /* C.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D654421CE363B008E0918 /* C.m */; };
+		FA4D654C21CE36C3008E0918 /* Mediator+A.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D654B21CE36C3008E0918 /* Mediator+A.m */; };
+		FA4D655021CE3828008E0918 /* D.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4D654F21CE3828008E0918 /* D.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,14 +31,18 @@
 /* Begin PBXFileReference section */
 		FA4D652421CD1ED2008E0918 /* MediatorProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MediatorProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4D652721CD1ED2008E0918 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FA4D652E21CD1EE5008E0918 /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
-		FA4D652F21CD1EE5008E0918 /* Mediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
-		FA4D653121CD1EEF008E0918 /* A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A.h; sourceTree = "<group>"; };
-		FA4D653221CD1EEF008E0918 /* A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A.m; sourceTree = "<group>"; };
-		FA4D653421CD1EF9008E0918 /* B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = B.h; sourceTree = "<group>"; };
-		FA4D653521CD1EF9008E0918 /* B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B.m; sourceTree = "<group>"; };
-		FA4D653721CD2927008E0918 /* C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C.h; sourceTree = "<group>"; };
-		FA4D653821CD2927008E0918 /* C.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C.m; sourceTree = "<group>"; };
+		FA4D653B21CE363B008E0918 /* B.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = B.h; sourceTree = "<group>"; };
+		FA4D653C21CE363B008E0918 /* B.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = B.m; sourceTree = "<group>"; };
+		FA4D653E21CE363B008E0918 /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		FA4D653F21CE363B008E0918 /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		FA4D654121CE363B008E0918 /* A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A.h; sourceTree = "<group>"; };
+		FA4D654221CE363B008E0918 /* A.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A.m; sourceTree = "<group>"; };
+		FA4D654421CE363B008E0918 /* C.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C.m; sourceTree = "<group>"; };
+		FA4D654521CE363B008E0918 /* C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C.h; sourceTree = "<group>"; };
+		FA4D654A21CE36C3008E0918 /* Mediator+A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mediator+A.h"; sourceTree = "<group>"; };
+		FA4D654B21CE36C3008E0918 /* Mediator+A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Mediator+A.m"; sourceTree = "<group>"; };
+		FA4D654E21CE3828008E0918 /* D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D.h; sourceTree = "<group>"; };
+		FA4D654F21CE3828008E0918 /* D.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,17 +75,61 @@
 		FA4D652621CD1ED2008E0918 /* MediatorProject */ = {
 			isa = PBXGroup;
 			children = (
+				FA4D654021CE363B008E0918 /* A */,
+				FA4D653A21CE363B008E0918 /* B */,
+				FA4D654321CE363B008E0918 /* C */,
+				FA4D654D21CE3812008E0918 /* D */,
+				FA4D653D21CE363B008E0918 /* Common */,
 				FA4D652721CD1ED2008E0918 /* main.m */,
-				FA4D652E21CD1EE5008E0918 /* Mediator.h */,
-				FA4D652F21CD1EE5008E0918 /* Mediator.m */,
-				FA4D653121CD1EEF008E0918 /* A.h */,
-				FA4D653221CD1EEF008E0918 /* A.m */,
-				FA4D653421CD1EF9008E0918 /* B.h */,
-				FA4D653521CD1EF9008E0918 /* B.m */,
-				FA4D653721CD2927008E0918 /* C.h */,
-				FA4D653821CD2927008E0918 /* C.m */,
 			);
 			path = MediatorProject;
+			sourceTree = "<group>";
+		};
+		FA4D653A21CE363B008E0918 /* B */ = {
+			isa = PBXGroup;
+			children = (
+				FA4D653B21CE363B008E0918 /* B.h */,
+				FA4D653C21CE363B008E0918 /* B.m */,
+			);
+			path = B;
+			sourceTree = "<group>";
+		};
+		FA4D653D21CE363B008E0918 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FA4D654A21CE36C3008E0918 /* Mediator+A.h */,
+				FA4D654B21CE36C3008E0918 /* Mediator+A.m */,
+				FA4D653E21CE363B008E0918 /* Mediator.h */,
+				FA4D653F21CE363B008E0918 /* Mediator.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FA4D654021CE363B008E0918 /* A */ = {
+			isa = PBXGroup;
+			children = (
+				FA4D654121CE363B008E0918 /* A.h */,
+				FA4D654221CE363B008E0918 /* A.m */,
+			);
+			path = A;
+			sourceTree = "<group>";
+		};
+		FA4D654321CE363B008E0918 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				FA4D654421CE363B008E0918 /* C.m */,
+				FA4D654521CE363B008E0918 /* C.h */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		FA4D654D21CE3812008E0918 /* D */ = {
+			isa = PBXGroup;
+			children = (
+				FA4D654E21CE3828008E0918 /* D.h */,
+				FA4D654F21CE3828008E0918 /* D.m */,
+			);
+			path = D;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,11 +188,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA4D653621CD1EF9008E0918 /* B.m in Sources */,
-				FA4D653321CD1EEF008E0918 /* A.m in Sources */,
-				FA4D653921CD2927008E0918 /* C.m in Sources */,
-				FA4D653021CD1EE5008E0918 /* Mediator.m in Sources */,
+				FA4D654721CE363B008E0918 /* Mediator.m in Sources */,
+				FA4D654621CE363B008E0918 /* B.m in Sources */,
+				FA4D654921CE363B008E0918 /* C.m in Sources */,
 				FA4D652821CD1ED2008E0918 /* main.m in Sources */,
+				FA4D654C21CE36C3008E0918 /* Mediator+A.m in Sources */,
+				FA4D655021CE3828008E0918 /* D.m in Sources */,
+				FA4D654821CE363B008E0918 /* A.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

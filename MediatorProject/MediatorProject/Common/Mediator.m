@@ -24,4 +24,10 @@
 
 }
 
+- (void)performTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params {
+    Class target = NSClassFromString(targetName);
+    id targetInstance = [[target alloc] init];
+    [targetInstance performSelector:NSSelectorFromString(actionName) withObject:params];
+}
+
 @end

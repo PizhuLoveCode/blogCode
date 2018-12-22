@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 //如果有3个参数
 - (void)printInCFromA:(NSString *)name age:(NSInteger)age height:(CGFloat)height;
 
+
+- (void)performTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params;
+
 @end
 
 NS_ASSUME_NONNULL_END
